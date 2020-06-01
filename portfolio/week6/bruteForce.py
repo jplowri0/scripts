@@ -9,7 +9,7 @@ passwordHash = "2cf24dba5fb0a30e26e83b2ac5b9e29e1b161e5c1fa7425e73043362938b9824
 #up to 6 characters. 
 #Here characters each character is placed into an array and the combinations function from the itertool 
 #module are imported. REF A
-letters = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+chars = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 from itertools import combinations
 
 for i in range(6):
@@ -18,7 +18,7 @@ for i in range(6):
     #REF A
     #REF B
     #REF C
-    for c in itertools.product(letters, repeat=i):
+    for c in itertools.product(chars, repeat=i):
         print(''.join(c), file=open("brute.txt", "a"))
 
 #open the wordlist
