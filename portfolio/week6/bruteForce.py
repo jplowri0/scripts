@@ -14,14 +14,15 @@ from itertools import combinations
 
 for i in range(6):
     #Here we are running a for loop to generate all possible combinations of
-    #the characters which are printed to a text file called brute.txt
+    #the characters which are printed to a text file called brute.txt. To keep the processing at a 
+    #minimum, I have kept the count of possible characters to a maximum of 5 characters. 
     #REF A
     #REF B
     #REF C
     for c in itertools.product(chars, repeat=i):
         print(''.join(c), file=open("brute.txt", "a"))
 
-#open the wordlist
+#open the wordlist - the code below has been sourced from CYB6004 Weekly Exercise 6.6
 with open("brute.txt", "r") as wordlist:
     #repeat for each word
     for word in wordlist.readlines():

@@ -1,4 +1,6 @@
 #!/usr/bin/python3
+
+#Ignore this scripts. It was for testing elements of the BruteForce script. 
 import itertools
 
 letters = [ 'a', 'b', 'c' ]
