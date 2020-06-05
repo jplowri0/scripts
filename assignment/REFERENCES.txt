@@ -1,0 +1,6 @@
+REFERENCES
+
+REF A https://www.geeksforgeeks.org/convert-json-to-csv-in-python/
+REF B https://stackoverflow.com/questions/4521426/delete-blank-rows-from-csv
+REF C https://stackoverflow.com/questions/32161216/python-csv-delete-empty-rows
+REF D https://www.reddit.com/r/learnpython/comments/apa2iq/how_do_i_remove_blank_rows_in_a_csv_file/
