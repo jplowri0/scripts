@@ -10,7 +10,7 @@ echo "$inputData" | sed -n '/<td nowrap/ {
     s/\/\"  title=\"CVE.*//
     
     p
-    }' > CVEcode.txt
+    }' > workingData/CVEcode.txt
 
 #This sed fucmtion retrieves the CVE number. 
 #top line of sed function deals with spacing 
@@ -24,10 +24,15 @@ echo "$inputData" | sed -n '/					<td><div class=/ {
     s/					<td><div class=\"cvssbox\" style=\"background-color:#\w\w\w\w\w\w\">//
     s/<\/div><\/td>//
     p
-    }' > RatingCode.txt
+    }' > workingData/RatingCode.txt
 
-#All OK up to here. Below issue of inputting sed on multiple lines. See test directory. 
+#Below, this sed command pulls out the vulnerability description which spans across multiple lines. 
+#REF https://www.thegeekstuff.com/2009/11/unix-sed-tutorial-multi-line-file-operation-with-6-practical-examples/
 
-echo "$inputData" | sed -e '/					<td class=\"cvesummarylong/ { 
-    s/					
-    }' > DesCode.txt
+echo "$inputData" | sed -n '/					<td class=\"cvesummarylong\" colspan=\"20\">/ { 
+    s/					<td class=\"cvesummarylong\" colspan=\"20\">//
+    N
+    s/\n						//
+    s/					<\/td>//
+    p	
+    }' > workingData/DesCode.txt
