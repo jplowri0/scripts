@@ -4,3 +4,5 @@ echo "Grand day it is $1!" #When the user executes the code with ./second.sh the
 exit 0 #The code exits without error. 
 
 #This code was referred to by CYB6004 Weekly Exercise 1.4 Step 4. 
+
+
