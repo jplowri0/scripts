@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#REF CYB6004 4.5 video. 
+
 inputData="$( cat scrapedData/watchOSdos1.html )"
 
 echo "$inputData" | sed -n '/<td nowrap/ { 
@@ -24,4 +26,8 @@ echo "$inputData" | sed -n '/					<td><div class=/ {
     p
     }' > RatingCode.txt
 
+#All OK up to here. Below issue of inputting sed on multiple lines. See test directory. 
 
+echo "$inputData" | sed -e '/					<td class=\"cvesummarylong/ { 
+    s/					
+    }' > DesCode.txt
