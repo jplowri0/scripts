@@ -6,9 +6,9 @@ inputData="$( cat scrapedData/watchOSdos1.html )"
 
 echo "$inputData" | sed -n '/<td nowrap/ { 
     s/										// 
-    s/<td nowrap><a href=\"\/cve\/// 
+    s/<td nowrap><a href=\"\/cve\///
     s/\/\"  title=\"CVE.*//
-    
+
     p
     }' > workingData/CVEcode.txt
 
@@ -36,3 +36,6 @@ echo "$inputData" | sed -n '/					<td class=\"cvesummarylong\" colspan=\"20\">/ 
     s/					<\/td>//
     p	
     }' > workingData/DesCode.txt
+
+
+    #This only does one page. Still need to set this up to scrape in a loop and for different attack vectors. 

@@ -1,0 +1,12 @@
+Scrape is done
+    - Still need for each attack vector option 
+sed to text file is done
+    - Still need to loop through each scrapped file. i.e. 1 through 6. 
+need to combine the three sed outputs to one csv
+    - how to add a comma at end of each value? Maybe sed? 
+    - combine all together as one CSV. Maybe python? 
+    - Add the rest of the different scrapes to one file. 
+Menu
+    - an option for each attack vector. 
+AWK to create a pretty table 
+At the top, show an average and count of threat scores. 
