@@ -6,18 +6,18 @@ import csv
 #from formatting[attackvector].sh. 
 #REF https://kite.com/python/answers/how-to-read-a-text-file-into-a-list-in-python#use-file-readlines
 
-CVEcodeTxt = open("CVEcode.txt", "r")
+CVEcodeTxt = open("DOScveCode/DOScveCodeAll.txt", "r")
 CVEcodeList = CVEcodeTxt.readlines()
 CVEcodeList = [item.rstrip() for item in CVEcodeList] #This removes the \n from each item in the list. REF http://python.6.x6.nabble.com/rstrip-in-list-td1745970.html 
 print(CVEcodeList)
 
 
-ratingCodeTxt = open("RatingCode.txt", "r")
+ratingCodeTxt = open("DOSratingCode/DOSratingCodeAll.txt", "r")
 ratingCodeList = ratingCodeTxt.readlines()
 ratingCodeList = [item.rstrip() for item in ratingCodeList] #REF http://python.6.x6.nabble.com/rstrip-in-list-td1745970.html 
 print(ratingCodeList)
 
-desCodeTxt = open("DesCode.txt", "r")
+desCodeTxt = open("DOSdesCode/DOSdesCodeAll.txt", "r")
 desCodeList = desCodeTxt.readlines()
 desCodeList = [item.rstrip() for item in desCodeList] #REF http://python.6.x6.nabble.com/rstrip-in-list-td1745970.html 
 print(desCodeList)
@@ -30,3 +30,5 @@ with open('scrapedDOS.csv', "w") as f:
     writer = csv.writer(f)
     for row in rows:
         writer.writerow(row)
+
+#ORDERS OF EACH TXT INPUT ARE JUMBLED AT THE MOMENT!!!
