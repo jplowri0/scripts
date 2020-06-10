@@ -1,22 +1,27 @@
-Scrape is done
+DONE Scrape is done
     - Still need for each attack vector option 
-sed to text file is done
-    - Still need to loop through each scrapped file. i.e. 1 through 6. 
+DONE sed to text file is done
+    - DONE Still need to loop through each scrapped file. i.e. 1 through 6. 
 need to combine the three sed outputs to one csv DONE. 
-    - how to add a comma at end of each value? Maybe sed? DONE. 
-    - combine all together as one CSV. Maybe python? DONE. 
-    - Add the rest of the different scrapes to one file. DONE 
-    - Compute a Count and Average. DONE
+    - DONE how to add a comma at end of each value? Maybe sed? DONE. 
+    - DONE combine all together as one CSV. Maybe python? DONE.
+    - need to combine all together as a TSV.  
+    - DONE Add the rest of the different scrapes to one file. DONE 
+    - DONE Compute a Count and Average. DONE
 Menu
     - an option for each attack vector. 
 AWK to create a pretty table 
 At the top, show an average and count of threat scores. 
 
+Repeat all workd above for each attack vector. 
+
 
 The Play by Play: 
 ./scrapeDOS.sh or AttackVector
 ./formattingDOS.sh or AttackVector
-CONCATEATE THE TEXT FILES. Sort of done. The files are getting jumbled. DONE
+python (AttackVector)CodeConcatenator.py
+python csvMaker.py
+./computing.sh 
 
 
 REPORT TESTING
