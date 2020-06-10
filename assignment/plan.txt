@@ -5,7 +5,8 @@ sed to text file is done
 need to combine the three sed outputs to one csv DONE. 
     - how to add a comma at end of each value? Maybe sed? DONE. 
     - combine all together as one CSV. Maybe python? DONE. 
-    - Add the rest of the different scrapes to one file. 
+    - Add the rest of the different scrapes to one file. DONE 
+    - Compute a Count and Average. DONE
 Menu
     - an option for each attack vector. 
 AWK to create a pretty table 
@@ -15,4 +16,8 @@ At the top, show an average and count of threat scores.
 The Play by Play: 
 ./scrapeDOS.sh or AttackVector
 ./formattingDOS.sh or AttackVector
-CONCATEATE THE TEXT FILES. Sort of done. The files are getting jumbled. 
+CONCATEATE THE TEXT FILES. Sort of done. The files are getting jumbled. DONE
+
+
+REPORT TESTING
+Screenshots required for CSV test. 
