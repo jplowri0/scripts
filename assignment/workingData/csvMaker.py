@@ -30,3 +30,10 @@ with open('scrapedDOS.csv', "w") as f:
     writer = csv.writer(f)
     for row in rows:
         writer.writerow(row)
+
+with open('scrapedDOS.csv', 'r') as inputCSV, open('scrapedDOStsv.txt', 'w') as outputTSV:
+    inputCSV = csv.reader(inputCSV)
+    outputTSV = csv.writer(outputTSV, delimiter='\t')
+
+    for row in inputCSV:
+        outputTSV.writerow(row)

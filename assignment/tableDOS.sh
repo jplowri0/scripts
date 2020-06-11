@@ -12,7 +12,7 @@
 #can bring in a function maybe to deal with the text wrapping
 
 awk 'BEGIN {
-    FS=",";
+    FS="\t";
     
     
 }
@@ -21,7 +21,7 @@ awk 'BEGIN {
 
     printf("CVE Number: \033[33m%-20s\033[0m \nThreat Score: \033[31m%-8s\033[0m \nThreat Description: \033[35m%s$\n\033[0m \n", $1, $2, $3);
 
-}' workingData/scrapedDOS.csv
+}' workingData/scrapedDOStsv.txt
 
 
 #This script here computes the average of the threat rating for a particular attack vector and also generates a count. 
