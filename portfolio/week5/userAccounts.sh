@@ -19,3 +19,5 @@ awk 'BEGIN {
 }' /etc/passwd
 
 #So far, this returns for every line in the passwd file. Below is used to now filter out the rows that are not using /bin/bash as the shell. 
+
+#See userAccountsFiltered.sh in this same directory. 

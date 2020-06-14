@@ -10,7 +10,7 @@ need to combine the three sed outputs to one csv DONE.
     - DONE Compute a Count and Average. DONE
 Menu
     - an option for each attack vector. 
-AWK to create a pretty table 
+SUFFICIENT. AWK to create a pretty table. If there is time continue to investigate the text wrap of the third column.  
 At the top, show an average and count of threat scores. 
 
 Repeat all workd above for each attack vector. 
@@ -21,7 +21,7 @@ The Play by Play:
 ./formattingDOS.sh or AttackVector
 python (AttackVector)CodeConcatenator.py
 python csvMaker.py
-./computing.sh 
+./tableDOS (or AttackVector).sh  
 
 
 REPORT TESTING
