@@ -1,7 +1,7 @@
 
-This program searches for known Common Vulnerabilities and Exposures (CVE's) for Apple's WatchOS. By selecting an option below, this program will search the CVE Details website (https://www.cvedetails.com) for known CVE's. 
+This program searches for known Common Vulnerabilities and Exposures (CVE's) for Apple's WatchOS. By selecting an option below, this program will search the CVE Details website (https://www.cvedetails.com) for known CVE's that affect the Apple Watch. 
 
-Once the search has completed, each CVE is printed and an average and the total number of known CVE's are computed. 
+Once the search has completed, each CVE is printed where an average threat rating and the total number of known CVE's are computed. 
 
 You will then have the option to export a CSV file from the search results. This allows for more advanced interrogation of the resulting data. 
 
