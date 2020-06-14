@@ -5,7 +5,7 @@
 #REF CYB6004 4.5 video. 
 
 for ((i=1;i<7;++i)); do 
-    inputData="$( cat scrapedData/watchOSdos$i.html )"
+    inputData="$( cat scrapedData/DOS/watchOSdos$i.html )"
 
     echo "$inputData" | sed -n '/<td nowrap/ { 
         s/										// 
