@@ -3,7 +3,7 @@
 #REF E
 
 #Below uses a for loop to scrape mulitple of pages. This is due to that there are only 50 records per page. So we must cycle through each 
-#page in order to get all the data. I set a range for page 1 to page 6 as there are only 6 pages. 
+#page in order to get all the data. I set a range for page 1 to page 5 as there are only 5 pages. 
 #The files are renamed to watchOSdos.html for clarity and are saved in the scrapedData directory. 
 
 for ((i=1;i<6;++i)); do 

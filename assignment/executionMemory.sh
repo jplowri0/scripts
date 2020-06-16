@@ -3,7 +3,7 @@
 echo "Beginning Web Scrape"
 ./scrapeMemory.sh
 echo "Now Formatting the scrape"
-./executionMemory.sh
+./formattingMemory.sh
 echo "Processing ........... "
 cd workingData/memoryCVECode/
 python memoryCVECodeConcatenator.py

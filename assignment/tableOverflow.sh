@@ -28,21 +28,21 @@ awk 'BEGIN {
 #REF: https://linuxconfig.org/calculate-column-average-using-bash-shell
 
 average=$(awk '{ total += $1; count++ } END { print total/count }' workingData/overflowRatingCode/overflowRatingCodeAll.txt)
-echo The average threat rating is:  $average
+echo "The average threat rating is:  $average"
 count=$(wc -l <workingData/codeExRatingCode/codeExRatingCodeAll.txt)
-echo There are $count Denial Of Service threats.
+echo "There are $count Denial Of Service threats."
 
 #Below we are giving the user the option to export a CSV. 
 #REF Week 2 folderCopier.sh & Week 3 internetDownloader.sh
 for ((i=0; ;++i)); do 
-    read -p "Would you like to export a CSV file? Y/N: " choice
+    read -p "Would you like to export a CSV file? Y/N (Use Capitals): " choice
     if [ $choice == Y ]; then
         #Checking for the existance of the directory. 
         read -p "type the destination: " destination
         if [ -d "$destination" ]; then
             cp workingData/scrapedOverflow.csv $destination
             echo "Success Exported to $destination"
-            echo "Good bye"
+            echo "Select andother attack vector or enter 11 to exit"
             exit 0
         else 
             echo "No directory exits"
