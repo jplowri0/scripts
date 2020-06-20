@@ -8,7 +8,7 @@ fold -s intro.txt #The text is wrapped where each line has a maximum of 80 chara
 
 echo "It's very important that our time keeping abilities are not threatened!!"
 
-for ((i=0; ;++i)); do #This for loop, loops infitely until the user enters option 8 and exits the program. REF https://stackoverflow.com/questions/31625794/infinite-for-loop-with-bash
+for ((i=0; ;++i)); do #This for loop, loops infitely until the user enters option 11 and exits the program. REF https://stackoverflow.com/questions/31625794/infinite-for-loop-with-bash
     echo "$(tput setaf 5) Choose a Vulnerability:$(tput sgr 0)" #Colour set by bounding the "Choose an Options" See REF https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
     echo "$(tput setaf 6)1. Bypass" #Open the colour setting for the menu options. See REF https://stackoverflow.com/questions/5947742/how-to-change-the-output-color-of-echo-in-linux
     echo "2. Code Execution"
@@ -35,6 +35,6 @@ for ((i=0; ;++i)); do #This for loop, loops infitely until the user enters optio
     10) ./executionInjection.sh;;
     11) echo "Auf Wiedersehen"
         exit 0;; #user deciding to quit the program. 
-    *) echo "Please check your entry and try again" #user entering an invalid option - such as "11"
+    *) echo "Please check your entry and try again" #user entering an invalid option - such as "12"
     esac
 done
