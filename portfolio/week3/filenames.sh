@@ -1,5 +1,5 @@
 #!/bin/bash
-
+#REF CYB6004 Week 3.4
 for string in $(cat *.txt;)
 do 
 

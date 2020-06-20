@@ -1,4 +1,5 @@
 #!/bin/bash
+#REF CYB6004 Week 4.5
 #get info about networking from the ifconfig command
 net_info="$(ifconfig)"
 #parse out the ip address lines using sed

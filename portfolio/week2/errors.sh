@@ -1,4 +1,5 @@
 #!/bin/bash
+#REF CYB6004 Week 2.6
 secret='shhh' #Don't tell anyone!
 #if the user types in the correct secret, tell them they got it right!
 read -s -p "what's the secret code?"

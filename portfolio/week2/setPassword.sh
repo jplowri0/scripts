@@ -1,4 +1,5 @@
 #!/bin/bash
+#REF CYB6004 Week 2.2 
 read -p "type the name of the password folder: " folderName #User enters the name of the password folder which is stored in the variable folderName
 mkdir "$folderName" #a durectory is now created using the what ever the user entered into the folderName variable. 
 read -sp 'Enter Password: ' passVar #A password is now stored in plain text in the passVar variable. The -s flag hides the entered text. 

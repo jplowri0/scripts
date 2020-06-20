@@ -7,7 +7,7 @@
 #Lines 14 and 15, are the table header, where line 10, formats the colour and width and the text content is applied after the formatting of the header cells. Line 15 is simply the header border. 
 #Line 18 like line 14, applies the formatting options such as colour and width and the field content is specified after the formatting commands. 
 #Using $n (where n is the field number) we can return the desired field and skip unwanted fields. 
-#Lines 14 and 18 where completed by referring to: REF C. 
+#Lines 14 and 18 where completed by referring to REF https://stackoverflow.com/questions/6262838/pretty-print-table-with-awk. 
 
 awk 'BEGIN {
     FS=":";

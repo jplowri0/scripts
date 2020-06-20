@@ -1,4 +1,5 @@
 #!/bin/bash
+#REF CYB6004 Week 2.3
 read -p "type the name of the folder you would like to copy: " folderName
 #if the name is a valid directory
 if [ -d "$folderName" ]; then

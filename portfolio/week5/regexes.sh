@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#REF CYB6004 Week 5.1
+
 #navigating to the portfolio directory
 cd /student/scripts/portfolio/
 

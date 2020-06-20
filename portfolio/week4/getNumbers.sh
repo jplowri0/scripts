@@ -1,5 +1,7 @@
 #!/bin/bash
 
+#REF CYB6004 Week 4.2
+
 #This function prints a given error
 printError()
 {
