@@ -13,4 +13,6 @@ For assessment 4 submission, I have downloaded this repository again, removed th
 
 For assessment 4, to execute the program, navigate to scripts/assignment and execute the ./start.sh script. This will launch the program. 
 
+GitHub URL. https://github.com/jplowri0/scripts
+
 
